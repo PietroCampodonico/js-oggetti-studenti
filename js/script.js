@@ -52,18 +52,12 @@ var registroDiClasse = [
 for (var i = 0; i < registroDiClasse.length; i++) {
     var datiStudente = (registroDiClasse[i]);
 
-    if (registroDiClasse[i]) {
-        console.log(datiStudente);
-    }
+    console.log("studente n°" + (i+1) + ": " + datiStudente.nome + " " + datiStudente.cognome);
 }
 
 // faccio generare all'utente le 3 chiavi di un nuovo oggetto studente{} e lo inserisco nell'array
 
-var studente_4 = {
-    nome: [],
-    cognome: [],
-    eta: [],
-}
+var studente_4 = {}
 
 for (var i = 0; i < 3; i++) {
 
@@ -71,18 +65,18 @@ for (var i = 0; i < 3; i++) {
         
         inputUtente = "Nome";
         var riferimentiStudente = prompt("Studente n°" + registroDiClasse.length + ": inserire " + inputUtente + " dello studente");
-        studente_4.nome.push(riferimentiStudente);
+        studente_4.nome = riferimentiStudente;
         
     } else if (i === 1) {
         
         inputUtente = "Cognome";
         var riferimentiStudente = prompt("Studente n°" + registroDiClasse.length + ": inserire " + inputUtente + " dello studente");
-        studente_4.cognome.push(riferimentiStudente);
+        studente_4.cognome = riferimentiStudente;
         
     } else {
         inputUtente = "età";
         var riferimentiStudente = prompt("Studente n°" + registroDiClasse.length + ": inserire " + inputUtente + " dello studente");
-        studente_4.eta.push(riferimentiStudente);
+        studente_4.eta = riferimentiStudente;
     }
 }
 
